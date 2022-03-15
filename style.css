@@ -57,7 +57,7 @@ textarea {
 .sidebar-header {
     padding: 2.5rem 0 1rem 0 ;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 18px;
     line-height: 21px;
     color: #3E3E51;
     font-family: 'Comfortaa', sans-serif;
@@ -70,7 +70,7 @@ textarea {
 }
 
 .sidebar-links li a {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
     color: #144339;
     margin: 0.4rem 1rem;
@@ -79,11 +79,10 @@ textarea {
     position: relative;
     z-index: 0;
     display: grid;
-    grid-template-columns: 26px auto;
-    grid-gap: 10px;
+    grid-template-columns: 22px auto;
     color: #8890b5;
     font-family: 'Comfortaa', sans-serif;
-    padding: 14px;
+    padding: 12px;
     align-items: center;
 }
 
@@ -133,14 +132,14 @@ textarea {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    padding: 0 50px;
+    padding: 0 18px;
     top: 0;
     /* border-bottom: #14256a solid 2px; */
 }
 
 .card-header  h3{
     font-weight: 600;
-    font-size: 30px;
+    font-size: 18px;
     letter-spacing: 8px;
     line-height: 24px;
     color: #14256a;
@@ -152,8 +151,8 @@ textarea {
 }
 
 .card-header button {
-    padding: 8px 15px;
-    font-size: 18px;
+    padding: 6px 12px;
+    font-size: 14px;
     background-color: var(--blue-300);
     border-radius: 5px;
     color: var(--sidebar-bg);
@@ -163,7 +162,8 @@ textarea {
 
 .card-body {
     overflow: auto;
-    /* text-align: center; */
+    min-height: calc(100vh - 20px);
+    text-align: center;
 }
 table {
     border-collapse: collapse;
@@ -172,20 +172,67 @@ table {
 thead tr td{
     border-top: 1px solid #f0f0f0;
     /* border-bottom: 2px solid #f0f0f0; */
-    padding: 15px 18px;
+    padding: 12px 2px;
     background-color: #F8FAFF;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 13px;
     line-height: 20px;
     color: #64c5b1;
+    text-transform: capitalize;
+}
+
+td:nth-child(2){
+    text-align: left;
 }
 
 td {
-    padding: 15px 18px;
-    font-size: 16px;
+    padding: 12px 2px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 20px;
-    color: #7e7172;
-    white-space: nowrap;
+    color: #888888;
+    white-space: normal;
+    text-transform: capitalize;
+    /* border-bottom: 0.5px solid #05d34e; */
 }
+
+.win {
+    padding: 2px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff!important;
+    background: #05d34e;
+    border-radius: 30px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    min-width: 70px;
+    text-align: center;
+}
+
+.loss{
+    padding: 2px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff!important;
+    background: #D54D52;
+    border-radius: 30px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    min-width: 70px;
+    text-align: center;
+}
+
+.checkbox{
+    padding: 3px 2px 2px 15px;
+}
+
+.check {
+    height: 14px;
+    width: 14px;
+}
+
+.action {
+    cursor: pointer;
+}
+
 
