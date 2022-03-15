@@ -108,13 +108,13 @@ textarea {
 .main-content {
     /* margin-left: 250px; */
     background-color: var(--main-bg);
-    width: calc(100% - 340px);
+    width: calc(100% - 300px);
     height: calc(100vh - 40px);
     /* margin: 40px 40px 40px 340px; */
-    margin-left: 320px;
-    margin-top: 20px;
+    margin-left: 300px;
+    /* margin-top: 20px; */
     position: relative;
-    border: #14256a solid 2px;
+    /* border: #14256a solid 2px; */
 }
 
 .trade-logs {
@@ -133,6 +133,8 @@ textarea {
     align-items: center;
     height: 80px;
     padding: 0 50px;
+    top: 0;
+    /* border-bottom: #14256a solid 2px; */
 }
 
 .card-header  h3{
@@ -141,17 +143,48 @@ textarea {
     letter-spacing: 8px;
     line-height: 24px;
     color: #14256a;
-    flex-basis: 30%;
+    /* flex-basis: 30%; */
     height:min-content;
     text-transform: uppercase;
     border-radius: 8px;
+    
 }
 
 .card-header button {
-    padding: 10px;
+    padding: 8px 15px;
     font-size: 18px;
     background-color: var(--blue-300);
     border-radius: 5px;
     color: var(--sidebar-bg);
     font-weight: 500;
+    border: none;
 }
+
+.card-body {
+    overflow: auto;
+    /* text-align: center; */
+}
+table {
+    border-collapse: collapse;
+}
+
+thead tr td{
+    border-top: 1px solid #f0f0f0;
+    /* border-bottom: 2px solid #f0f0f0; */
+    padding: 15px 18px;
+    background-color: #F8FAFF;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #64c5b1;
+}
+
+td {
+    padding: 15px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #7e7172;
+    white-space: nowrap;
+}
+
